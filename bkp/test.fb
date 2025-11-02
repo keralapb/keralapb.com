@@ -1,0 +1,28 @@
+<section class="teams-section" id="teams">
+  <div class="teams-container">
+    <p class="section-label">LATEST EVENTS</p>
+    <h2 class="section-title">Stay Connected with Our Community</h2>
+    <p style="max-width: 800px; margin: 0 auto 3rem; color: #666; font-size: 18px;">
+      Follow our Facebook page for the latest updates on our executive committee, upcoming events, cultural programs, photos from our celebrations, and community news.
+    </p>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v20.0"></script>
+
+    <div class="facebook-embed-container">
+      <div class="fb-page-wrapper">
+        <div class="fb-page"
+             data-href="https://www.facebook.com/KAPBTeam"
+             data-tabs="timeline, events"
+             data-width=""
+             data-height="700"
+             data-small-header="false"
+             data-adapt-container-width="true"
+             data-hide-cover="false"
+             data-show-facepile="true">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
