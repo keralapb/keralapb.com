@@ -57,15 +57,38 @@
                 <h2>KAPB: Preserving Heritage, Embracing Opportunities Since 2011</h2>
                 <p>It has been the dream of Malayalees of Palm Beach, and neighboring counties, to have our own association. January 9, 2011 was a "GOLDEN DAY" in the fulfillment of that dream. A small group of people met and started the long awaited Kerala Association of Palm Beach.</p>
                 <p>The Malayalee Association of Palm Beach (KAPB) is one of the oldest and most inclusive Indian regional associations. As a not-for-profit organization, we are dedicated to individually and collectively promote and instill the culture and traditions of Kerala along with the unique heritage of its members.</p>
-                <a href="#" class="learn-more">Learn More →</a>
             </div>
         </div>
     </section>
 
-    <!-- Teams Section -->
+    <!-- Latest Events -->
+    <section class="events-section" id="teams">
+        <div class="events-container">
+            <p class="section-label">LATEST EVENTS</p>
+            <h2 class="section-title">Stay Connected with Our Community</h2>
+            <p class="events-intro">Follow our Facebook page for the latest updates on our executive committee, upcoming events, cultural programs, photos from our celebrations, and community news.</p>
+            <div class="fb-container">
+                <div class="fb-wrapper">
+                    <div class="fb-page"
+                        data-href="https://www.facebook.com/KAPBTeam"
+                        data-tabs="timeline"
+                        data-width="500"
+                        data-height="600"
+                        data-small-header="true"
+                        data-adapt-container-width="true"
+                        data-hide-cover="false"
+                        data-show-facepile="true">
+                        <blockquote cite="https://www.facebook.com/KAPBTeam" class="fb-xfbml-parse-ignore">
+                            <a href="https://www.facebook.com/KAPBTeam">Kerala Association of Palm Beach</a>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- What We Do -->
-    <section class="what-we-do" id="teams">
+    <!-- What We Do & Membership -->
+    <section class="what-we-do">
         <div class="wwd-container">
             <div class="wwd-content">
                 <p class="about-label">WHAT WE DO</p>
@@ -78,46 +101,19 @@
                     <li>Encourage Cultural Assimilation</li>
                     <li>Foster Goodwill and Harmony</li>
                 </ul>
-                <p class="section-label">LATEST EVENTS</p>
-                <h2 class="section-title">Stay Connected with Our Community</h2>
-                <p style="max-width: 800px; margin: 0 auto 3rem; color: #666; font-size: 18px;">
-                 Follow our Facebook page for the latest updates on our executive committee, upcoming events, cultural programs, photos from our celebrations, and community news.
-                </p>
             </div>
-            <div class="fb-container">
-            <div class="fb-wrapper">
-                <div class="fb-page"
-                    data-href="https://www.facebook.com/KAPBTeam"
-                    data-tabs="timeline,events"
-                    data-width="500"
-                    data-height="700"
-                    data-small-header="false"
-                    data-adapt-container-width="true"
-                    data-hide-cover="false"
-                    data-show-facepile="true">
-                    <blockquote cite="https://www.facebook.com/KAPBTeam" class="fb-xfbml-parse-ignore">
-                        <a href="https://www.facebook.com/KAPBTeam">Kerala Association of Palm Beach</a>
-                    </blockquote>
-                </div>
+            <div class="wwd-content" id="membership">
+                <p class="about-label">BECOME A MEMBER</p>
+                <h2>Join Our Vibrant Community</h2>
+                <p>Be part of preserving and celebrating Kerala's rich cultural heritage in Palm Beach:</p>
+                <ul class="wwd-list">
+                    <li>Payment Methods: Zelle, Cash, or Check</li>
+                    <li>Zelle ID: keralapb@gmail.com</li>
+                    <li>Check Payable To: Kerala Association of Palm Beach Inc.</li>
+                </ul>
+                <p>For membership forms and more information, contact us at <a href="mailto:keralapb@gmail.com" style="color: #FF6B9D; font-weight: bold;">keralapb@gmail.com</a></p>
+                <a class="membership-preview-toggle" onclick="openModal('membershipModal')">View Membership Form</a>
             </div>
-        </div>
-        </div>
-    </section>
-
-    <!-- Membership -->
-    <section class="membership-section" id="membership">
-        <div class="membership-container">
-            <p class="section-label" style="text-align: center;">BECOME A MEMBER</p>
-            <h2 class="section-title" style="text-align: center;">Join Our Vibrant Community</h2>
-            <p style="max-width: 700px; margin: 0 auto 2rem; color: #666; font-size: 18px; text-align: center;">
-                Join our vibrant community and be part of preserving and celebrating Kerala's rich cultural heritage in Palm Beach.
-            </p>
-            <p><strong>Payment Methods:</strong> Zelle, Cash, or Check</p>
-            <p><strong>Zelle ID:</strong> keralapb@gmail.com</p>
-            <p><strong>Check Payable To:</strong> Kerala Association of Palm Beach Inc.</p>
-            <p style="margin-top: 1rem;">For membership forms and more information, contact us at <a href="mailto:keralapb@gmail.com" style="color: #FF6B9D; font-weight: bold;">keralapb@gmail.com</a></p>
-            <a class="membership-preview-toggle" onclick="toggleMembershipPreview()">View Membership Form</a>
-            <iframe src="files/KAPB  Membership Form.pdf" class="membership-preview" id="membershipPreview"></iframe>
         </div>
     </section>
 
@@ -145,8 +141,7 @@
                 <h2>Bylaws</h2>
                 <p>Our bylaws outline the governing principles, membership rules, and operational guidelines for the Kerala Association of Palm Beach. They ensure transparency and adherence to our mission.</p>
             </div>
-            <a class="bylaws-preview-toggle" onclick="toggleBylawsPreview()">View Bylaws</a>
-            <iframe src="files/ByLaws.pdf" class="bylaws-preview" id="bylawsPreview"></iframe>
+            <a class="bylaws-preview-toggle" onclick="openModal('bylawsModal')">View Bylaws</a>
         </div>
     </section>
 
@@ -192,6 +187,24 @@
         </div>
     </footer>
 
+    <!-- Membership Form Modal -->
+    <div class="modal-overlay" id="membershipModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('membershipModal')" aria-label="Close">&times;</button>
+            <h3>Membership Form</h3>
+            <iframe data-src="files/KAPB  Membership Form.pdf" class="modal-iframe"></iframe>
+        </div>
+    </div>
+
+    <!-- Bylaws Modal -->
+    <div class="modal-overlay" id="bylawsModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('bylawsModal')" aria-label="Close">&times;</button>
+            <h3>Bylaws</h3>
+            <iframe data-src="files/ByLaws.pdf" class="modal-iframe"></iframe>
+        </div>
+    </div>
+
     <script>
         // Mobile Menu
         const navToggle = document.getElementById('navToggle');
@@ -222,17 +235,33 @@
             });
         });
 
-        // Toggle Membership Preview
-        function toggleMembershipPreview() {
-            const preview = document.getElementById('membershipPreview');
-            preview.style.display = preview.style.display === 'block' ? 'none' : 'block';
+        // Modal (Membership Form / Bylaws)
+        function openModal(id) {
+            const modal = document.getElementById(id);
+            const iframe = modal.querySelector('iframe[data-src]');
+            if (iframe && !iframe.src) {
+                iframe.src = iframe.dataset.src;
+            }
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
         }
 
-        // Toggle Bylaws Preview
-        function toggleBylawsPreview() {
-            const preview = document.getElementById('bylawsPreview');
-            preview.style.display = preview.style.display === 'block' ? 'none' : 'block';
+        function closeModal(id) {
+            document.getElementById(id).classList.remove('active');
+            document.body.style.overflow = '';
         }
+
+        document.querySelectorAll('.modal-overlay').forEach(overlay => {
+            overlay.addEventListener('click', (e) => {
+                if (e.target === overlay) closeModal(overlay.id);
+            });
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                document.querySelectorAll('.modal-overlay.active').forEach(m => closeModal(m.id));
+            }
+        });
     </script>
 
     <!-- Facebook SDK -->
